@@ -87,7 +87,7 @@ void loop() {
   } else if(dist_ema >= 360){
     myservo.writeMicroseconds(_DUTY_MAX);
   } else {
-    myservo.write(10*(dist_ema-18));
+    myservo.write(10*(dist_ema-180));
   }
 
   // output the distance to the serial port
